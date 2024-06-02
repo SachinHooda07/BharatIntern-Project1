@@ -21,7 +21,7 @@ async function checkWeather(city) {
     container.style.background = "white";
   }
   if (weather_data.cod === `404`) {
-    container.style.background = "white"
+    container.style.background = "white";
     location_not_found.style.display = "flex";
     weather_body.style.display = "none";
     weather_gif.style.display = "none";
@@ -54,6 +54,9 @@ async function checkWeather(city) {
       break;
     case "Mist":
       weather_img.src = "/Weather_APP/weather_img/mist.png";
+      break;
+    case "Haze":
+      weather_img.src = "/Weather_APP/weather_img/haze.png";
       break;
     case "Snow":
       weather_img.src = "/Weather_APP/weather_img/snow.png";
